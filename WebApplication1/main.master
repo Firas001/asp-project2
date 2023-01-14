@@ -1,0 +1,197 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="WebApplication1.main" %>
+
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مشروع برمجة ويب 2</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.rtl.min.css"> 
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css"> 
+    
+
+    <style>
+
+        .col-centered{
+            margin: 0px auto;
+            float: none;
+        }
+
+        .margin-top-10p{
+            margin-top: 10px;
+        }
+
+        .margin-top-30p{
+            margin-top: 30px;
+        }
+
+
+        .margin-bottom-50p{
+            margin-bottom: 50px;
+        }
+
+
+        .rtl{
+            direction: rtl;
+        }
+
+        .project-bg-color{
+            background-color: #f8f9fa;
+        }
+
+        footer{
+            position: relative;;
+            bottom: -350px;
+            width: 100%;
+        }
+
+        
+        .btn-login {
+          font-size: 0.9rem;
+          letter-spacing: 0.05rem;
+          padding: 0.75rem 1rem;
+        }
+
+        .btn-google {
+          color: white !important;
+          background-color: #ea4335 !important;
+        }
+
+        .btn-facebook {
+          color: white !important;
+          background-color: #3b5998 !important;
+        }
+
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="project-bg-color">
+
+
+
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-5">
+
+                   <a class="navbar-brand" href="#!">Start Bootstrap</a>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample"  >
+      <!-- Left links -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+         <li class="nav-item"><a class="nav-link" href="home.aspx" id="home">الرئيسية</a></li>
+         <li class="nav-item"><a class="nav-link" href="files.aspx" id="files">الملفات</a></li>
+          <li class="nav-item"><a class="nav-link" href="users.aspx" id="users">المستخدمون</a></li>
+      </ul>
+
+
+      <!-- Left links -->
+
+    </div>
+           <a ID="Login" class="btn btn-primary btn px-4 me-sm-3" href="login.aspx" runat="server">تسجيل الدخول</a>
+          <a ID="Logout" class="btn btn-danger btn px-4 me-sm-3" runat="server" onserverclick="Logout_Click">تسجيل الخروج</a>
+         
+        </div>
+
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center my-5">
+                
+              <h1 class="display-5 fw-bolder text-white mb-2" runat="server" visible="true" id="wellcom">
+                مرحباً زائرنا العزيز بكلية تقنية المعلومات
+              </h1>
+                
+              <p class="lead text-white-50 mb-4 mt-4">
+               تمت برمجة هذا الموقع باستخدام إطار العمل ASP.NET ومكتبة Bootstrap لغرض التعلم والاستفادة من بعض الأفكار المستخدمة، لتسهيل برمجة المشاريع في هذا الفصل<br />
+                يستهدف هذا المشروع طلبة برمجة ويب 1 وبرمجة ويب 2 و طلبة إدارة تطبيقات الإنترنت، أتمنى الاستفادة للجميع 
+              </p>
+              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features"
+                  >تحميل المشروع</a
+                >
+                <a class="btn btn-outline-light btn-lg px-4" href="#!"
+                  >المزيد من المشاريع</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  
+
+    <!-- Custom page -->
+    <form id="form1" runat="server">
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+
+    <!-- End Custom page -->
+
+
+
+     <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 جميع الحقوق محفوظة لـ:
+          <a class="text-white" href="#!">فراس الدويني</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
