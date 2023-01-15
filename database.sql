@@ -22,7 +22,7 @@ GO
 create table Files
 (
 	[FILE_ID] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	[TITLE] [varchar](100) NOT NULL,
+	[TITLE] [nvarchar](100) NOT NULL,
 	[UPLOAD_DATE] [datetime] NOT NULL,
 	[USER_ID] [nvarchar](50) NOT NULL FOREIGN KEY REFERENCES USERS(USER_ID),
 	[PATH] [varchar](100) NOT NULL,

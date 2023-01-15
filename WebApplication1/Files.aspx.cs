@@ -21,8 +21,10 @@ namespace WebApplication1
                 Response.Redirect("login.aspx");
 
             else if (Session["role"].Equals("admin") || Session["role"].Equals("user"))
-                fillUsersValues();
-
+            {
+                if (!IsPostBack)
+                    fillUsersValues();
+            }        
             else
                 Response.Redirect("login.aspx");
 
