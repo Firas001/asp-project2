@@ -71,7 +71,7 @@ namespace WebApplication1
                 // delete ~/ from path
                 path = path.Remove(0, 1);
 
-                // write path from device
+                // غير المسار هدا بمسار مشروعك في حهازك
                 path = "C://Users//FirasDW//Desktop//firas//asp-project1//WebApplication1" + path;
 
 
@@ -126,6 +126,7 @@ namespace WebApplication1
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
+            fillFiles();
 
             // download
 

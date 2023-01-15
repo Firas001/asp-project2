@@ -86,13 +86,13 @@ namespace WebApplication1
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("SELECT USER_NAME, USER_ID from USERS", con);
+                SqlCommand cmd = new SqlCommand("SELECT (FirstName +' '+ LastName) as full_name, USER_ID from USERS", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 user_name.DataSource = dt;
 
-                user_name.DataTextField = "USER_NAME";
+                user_name.DataTextField = "full_name";
                 user_name.DataValueField = "USER_ID";
 
                 user_name.DataBind();
