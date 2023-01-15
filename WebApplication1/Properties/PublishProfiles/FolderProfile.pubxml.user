@@ -5,6 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\FirasDW\Desktop\publish</_PublishTargetUrl>
+    <History>False|2023-01-15T22:11:59.6277658Z;False|2023-01-16T00:11:17.0347269+02:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">

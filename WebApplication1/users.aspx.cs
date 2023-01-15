@@ -22,7 +22,7 @@ namespace WebApplication1
                 if (Session["role"] == null)
                     Response.Redirect("login.aspx");
 
-                else if (Session["role"].Equals("admin")) {
+                else if (Session["role"].Equals("admin"))
                     {
                         if (!IsPostBack)
                             PopulateGridview();

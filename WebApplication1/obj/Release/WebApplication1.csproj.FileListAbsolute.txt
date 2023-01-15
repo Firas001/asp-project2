@@ -57,3 +57,7 @@ C:\Users\FirasDW\Desktop\firas\asp-project2\WebApplication1\obj\Release\WebAppli
 C:\Users\FirasDW\Desktop\firas\asp-project2\WebApplication1\obj\Release\WebApplication1.csproj.CopyComplete
 C:\Users\FirasDW\Desktop\firas\asp-project2\WebApplication1\obj\Release\WebApplication1.dll
 C:\Users\FirasDW\Desktop\firas\asp-project2\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\FirasDW\Desktop\p-asp\asp-project2\WebApplication1\obj\Release\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\FirasDW\Desktop\p-asp\asp-project2\WebApplication1\obj\Release\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\FirasDW\Desktop\p-asp\asp-project2\WebApplication1\obj\Release\WebApplication1.dll
+C:\Users\FirasDW\Desktop\p-asp\asp-project2\WebApplication1\obj\Release\WebApplication1.pdb
